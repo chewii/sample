@@ -1,0 +1,222 @@
+/* google fonts link */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+a:hover, a:visited, a:link, a:active {
+
+    text-decoration: none!important;
+
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+@font-face  {
+				font-family: 'lemon';
+				src: url('fonts/LEMONMILK-Regular.otf');
+}
+@font-face  {
+				font-family: 'pop';
+				src: url('fonts/Poppins-Regular.ttf');
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+		background: url('images/choicebg.jpg');
+		background-position: center;
+		background-size: cover;
+}
+/* nav bar start */
+.nav-link {
+				font-family: lemon;
+				font-size: 12px;
+				margin-right: 10px;
+				margin-left: 10px;				
+				color: #616161;	
+				text-transform: uppercase;
+}
+.nav-link:hover {
+				background: -webkit-linear-gradient(#616161, #fff742); 
+				-webkit-background-clip: text; 				-webkit-text-fill-color: transparent;			
+				transition: all ease 0.3s;		
+}
+/* nav bar ends */
+
+/* choice Starts */
+
+.container-fluid {
+				font-family: "Nunito", sans-serif;
+}
+.redirect {
+				text-decoration: none;
+			 color: black;
+}
+.theme-text {
+  color: #FFD700;
+}
+.textbox {
+				font-weight: bold;
+				text-align: justify;
+				text-decoration: none;
+}
+.text-center {
+				font-weight: bold;
+				text-decoration: none;
+}
+.card-img-top {
+  height: 200px;
+  width: 100%;
+}
+.card {
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card:hover {
+  color: white;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0%;
+  background: #FFD700;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: -1;
+}
+.card:hover::before {
+  left: 0%;
+  color: white;
+  
+}
+.container-fluid {
+  background-image: url("blob-scene-haikei.svg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  background-color: #000;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.wrapper .footer-widget {
+  width: calc(20% - 30px);
+  margin: 0 15px 50px;
+  padding: 0 12px;
+}
+
+.wrapper .footer-widget:nth-child(1) {
+  width: calc(40% - 50px);
+  margin-right: 15px;
+}
+
+.wrapper .footer-widget .logo {
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
+.wrapper .footer-widget p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.wrapper .footer-widget h6 {
+
+  color: #fbee9b;
+  margin: 10px 0 35px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wrapper .footer-widget .links li {
+  list-style: none;
+}
+.wrapper i {
+			color: #fbee9b;
+}
+
+.wrapper .footer-widget .links li a {
+  color: #fbee9b;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 32px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .footer-widget .miniabt li a {
+  color: #fbee9b;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 32px;
+  transition: all 0.3s ease-out;
+  text-align: justify;
+}
+
+.wrapper .footer-widget .links li a:hover {
+  color: #037ef3;
+}
+
+.copyright-wrapper {
+  padding: 20px 0;
+  border-top: 1px solid rgba(88, 89, 120, 0.4);
+}
+
+.copyright-wrapper p {
+  color: rgba(88, 89, 120, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.copyright-wrapper p {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+/* Let's write the media query */
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .wrapper .footer-widget,
+  .wrapper .footer-widget:nth-child(1) {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .wrapper .footer-widget,
+  .wrapper .footer-widget:nth-child(1) {
+    width: 100%;
+    margin: 0 10px 50px;
+  }
+}
